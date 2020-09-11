@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <h1>Formularios en HTML (inputs)</h1>
+    <hr/>
+    <form action="">
+     <!--Nombre-->   
+    <label for="Nombre:">Nombre</label>
+    <input type="text" required placeholder="Ingresa tu nombre" minlength="4" maxlength="10">
+    <br/>
+    <br/>
+    <!--Apellido-->
+    <label for="Apellido">Apellido</label>
+    <input type="text" required placeholder="Ingresa tu apellido" min="5" id="Apellido">
+    <br/>
+    <br/>
+    <!--Correo-->
+    <label for="Email">Email</label>
+    <input type="Email" required placeholder="Ingresa tu correo" id="Email">
+    <!--Password-->
+    <br/>
+    <br/>
+    <label for="Password">Ingresa tu password</label>
+    <input type="password" required id="Password" minlength="8" maxlength="10" required >
+    <br/>
+    <br/>
+    <!--min se utiliza para comparar numeros-->
+    <label for="Numero">Telefono</label>
+    <input type="number" required placeholder="Ingresa" min="0" max="10" id="Telefono">
+    <br/>
+    <br/>
+    <!--Seleccionar tipo radio-->
+    <h4>Selecciona una opción</h4>
+    <input type="radio" value="Masculino" checked id="1">Masculino
+    <input type="radio" value="Femenino" id="2"/>Femenino
+    <br/>
+    <br/>
+    <!--Checkbox-->
+    <h4>Selecciona los aparatos que tienes en casa</h4>
+    <input type="checkbox" id="1" value="TV">TV
+    <br/>
+    <input type="checkbox" id="2" value="Laptop">Laptop
+    <br>
+    <input type="checkbox" id="3" value="Celular">Celular
+    <br>
+    <input type="checkbox" id="4" value="Tableta">Tableta
+    <br>
+    <br>
+    <label for="">selecciona una opción</label>
+   <!--Select se utiliza para sellecionar la información y opcion para ingresar losdatos-->
+   <select id="País">
+       <option value="0">Seleccionar país</option>
+       <option value="1">Mexíco</option>
+       <option value="2">EUA</option>
+       <option value="3">Francia</option>
+       <option value="4">Italia</option>
+       <option value="5">España</option>
+       </select>
+       <br/>
+       <br/>
+       <label for="Fecha">Selecciona una fecha</label>
+       <input type="date" min="2020-01-01" max="2020-12-31" value="2020-09-04">
+       <br/>
+       <br/>
+       <label for="mes">Selecciona el mes</label>
+       <input type="month" min="2020-01" max="2020-12" value="2020-09">
+       
+       <br/>
+       <br/>
+       ><label for="año">Selecciona el año</label>
+       <input type="year" min="2010" max="2020" value="2020">
+       <br/>
+       <br/>
+       <label for="color">Selecciona un color</label>
+       <input type="color"/>
+       <br/>
+       <br/>
+       <label for="Volumen">Volumen</label>
+       <input type="range"/>
+       <br>
+       <br>
+       <!--Textarea-->
+       <label for="">Comentarios:</label>
+        <br>
+        <textarea id="Comentarios" cols="30" rows="10" required></textarea>
+        <br>
+        <label for="">Transporte:</label>
+        <br>
+        <textarea id="Transporte" cols="12" rows="10">
+            Camión
+            Carro
+            Bicicleta
+            Moto
+            Avión
+            Helicoptero
+        </textarea>
+        <br>
+        <!--Input tipo boton para validar info-->
+        <input type="submit" value="Enviar">
+
+    </form>
+</body>
+</html>
